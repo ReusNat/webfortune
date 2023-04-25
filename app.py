@@ -26,6 +26,6 @@ def fortune():
 
 @app.route('/cowsay/<message>/')
 def cowsay(message):
-    output = subprocess.check_output(f'cowsay {message}',
+    output = subprocess.check_output('cowsay %s' %message,
                                      shell=True).decode()
     return '<pre>' + output + '</pre>'
