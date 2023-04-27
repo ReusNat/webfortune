@@ -2,8 +2,6 @@ from flask import (
     abort, Flask, jsonify, redirect, render_template, request,
     session, url_for
 )
-
-from os import system
 import subprocess
 
 app = Flask(__name__)
