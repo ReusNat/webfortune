@@ -17,7 +17,7 @@ docker run cowsay
 ```
 If you would like to run the docker container on a specific port change `docker run cowsay` to `docker run -dp <port>:5000 cowsay` where <port> is your desired port.
 When you run these commands a flask server will be running on your IP on port 5000.
-###To kill the server run:
+### To kill the server run:
 ```
 docker ps
 docker kill <name of container>
