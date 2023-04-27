@@ -5,7 +5,7 @@ from flask import (
 import subprocess
 
 app = Flask(__name__)
-app.secret_key = b'REPLACE_ME_x#pi*CO0@^z_beep_beep_boop_boop'
+app.secret_key = b'gtrjhwivbiutrgiprfnijgrjiphfijpqhnguirphfiuphveqiuprgvnh'
 
 
 @app.route('/')
@@ -26,4 +26,5 @@ def fortune():
 def cowsay(message):
     output = subprocess.check_output('cowsay %s' %message,
                                      shell=True).decode()
+    
     return '<pre>' + output + '</pre>'
